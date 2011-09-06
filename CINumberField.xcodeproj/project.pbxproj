@@ -13,6 +13,10 @@
 		7CD1EC911416217200173C0D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1EC8F1416217200173C0D /* Credits.rtf */; };
 		7CD1EC941416217200173C0D /* CINumberFieldAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD1EC931416217200173C0D /* CINumberFieldAppDelegate.m */; };
 		7CD1EC971416217200173C0D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1EC951416217200173C0D /* MainMenu.xib */; };
+		7CD1ECA11416219300173C0D /* CINumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD1ECA01416219300173C0D /* CINumberField.m */; };
+		7CD1ECA3141624C300173C0D /* faceleg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1ECA2141624C300173C0D /* faceleg.jpg */; };
+		7CD1ECA5141626E800173C0D /* faceleg.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1ECA4141626E800173C0D /* faceleg.icns */; };
+		7CD1ECA714162A1D00173C0D /* faceleg_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1ECA614162A1D00173C0D /* faceleg_icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +25,19 @@
 		7CD1EC831416217200173C0D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7CD1EC841416217200173C0D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7CD1EC851416217200173C0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7CD1EC881416217200173C0D /* CINumberField-Info.plist */ = {isa = PBXFileReference; path = "CINumberField-Info.plist"; sourceTree = "<group>"; };
+		7CD1EC881416217200173C0D /* CINumberField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CINumberField-Info.plist"; sourceTree = "<group>"; };
 		7CD1EC8A1416217200173C0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7CD1EC8C1416217200173C0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7CD1EC8E1416217200173C0D /* CINumberField-Prefix.pch */ = {isa = PBXFileReference; path = "CINumberField-Prefix.pch"; sourceTree = "<group>"; };
+		7CD1EC8E1416217200173C0D /* CINumberField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CINumberField-Prefix.pch"; sourceTree = "<group>"; };
 		7CD1EC901416217200173C0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		7CD1EC921416217200173C0D /* CINumberFieldAppDelegate.h */ = {isa = PBXFileReference; path = CINumberFieldAppDelegate.h; sourceTree = "<group>"; };
+		7CD1EC921416217200173C0D /* CINumberFieldAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CINumberFieldAppDelegate.h; sourceTree = "<group>"; };
 		7CD1EC931416217200173C0D /* CINumberFieldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CINumberFieldAppDelegate.m; sourceTree = "<group>"; };
 		7CD1EC961416217200173C0D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7CD1EC9F1416219300173C0D /* CINumberField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CINumberField.h; sourceTree = "<group>"; };
+		7CD1ECA01416219300173C0D /* CINumberField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CINumberField.m; sourceTree = "<group>"; };
+		7CD1ECA2141624C300173C0D /* faceleg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faceleg.jpg; sourceTree = "<group>"; };
+		7CD1ECA4141626E800173C0D /* faceleg.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = faceleg.icns; sourceTree = "<group>"; };
+		7CD1ECA614162A1D00173C0D /* faceleg_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = faceleg_icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +55,9 @@
 		7CD1EC711416217200173C0D = {
 			isa = PBXGroup;
 			children = (
+				7CD1ECA614162A1D00173C0D /* faceleg_icon.icns */,
+				7CD1ECA4141626E800173C0D /* faceleg.icns */,
+				7CD1ECA2141624C300173C0D /* faceleg.jpg */,
 				7CD1EC861416217200173C0D /* CINumberField */,
 				7CD1EC7F1416217200173C0D /* Frameworks */,
 				7CD1EC7D1416217200173C0D /* Products */,
@@ -82,6 +94,7 @@
 		7CD1EC861416217200173C0D /* CINumberField */ = {
 			isa = PBXGroup;
 			children = (
+				7CD1EC9D1416217C00173C0D /* Categories */,
 				7CD1EC921416217200173C0D /* CINumberFieldAppDelegate.h */,
 				7CD1EC931416217200173C0D /* CINumberFieldAppDelegate.m */,
 				7CD1EC951416217200173C0D /* MainMenu.xib */,
@@ -100,6 +113,15 @@
 				7CD1EC8F1416217200173C0D /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CD1EC9D1416217C00173C0D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				7CD1EC9F1416219300173C0D /* CINumberField.h */,
+				7CD1ECA01416219300173C0D /* CINumberField.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +177,9 @@
 				7CD1EC8B1416217200173C0D /* InfoPlist.strings in Resources */,
 				7CD1EC911416217200173C0D /* Credits.rtf in Resources */,
 				7CD1EC971416217200173C0D /* MainMenu.xib in Resources */,
+				7CD1ECA3141624C300173C0D /* faceleg.jpg in Resources */,
+				7CD1ECA5141626E800173C0D /* faceleg.icns in Resources */,
+				7CD1ECA714162A1D00173C0D /* faceleg_icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +192,7 @@
 			files = (
 				7CD1EC8D1416217200173C0D /* main.m in Sources */,
 				7CD1EC941416217200173C0D /* CINumberFieldAppDelegate.m in Sources */,
+				7CD1ECA11416219300173C0D /* CINumberField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
