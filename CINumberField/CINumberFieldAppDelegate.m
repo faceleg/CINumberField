@@ -12,9 +12,10 @@
 
 @synthesize window;
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    // Insert code here to initialize your application
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification { }
+
+- (void) controlTextDidEndEditing:(NSNotification *)obj {
+    NSLog(@"%@ - %@", [[obj object] class], [obj name]);
 }
 
 @end

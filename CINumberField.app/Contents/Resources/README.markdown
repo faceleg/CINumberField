@@ -10,9 +10,10 @@ I figured I’d take a Javascript-esque approach to the problem: when the user h
 
 Usage
 =====
-More to come - for now see this blog post: [Subclassing NSTextField to Allow Only Numbers](http://pagesofinterest.net/blog/2010/11/subclassing-nstextfield-to-allow-only-numbers/).
+
 
 
 Todo
 ====
++ add an example using NSNumberFormatter
 + add an extended example limiting range

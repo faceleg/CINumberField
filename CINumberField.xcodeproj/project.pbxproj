@@ -16,6 +16,7 @@
 		7CD1EC971416217200173C0D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1EC951416217200173C0D /* MainMenu.xib */; };
 		7CD1ECA11416219300173C0D /* CINumberField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD1ECA01416219300173C0D /* CINumberField.m */; };
 		7CD1ECA714162A1D00173C0D /* faceleg_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1ECA614162A1D00173C0D /* faceleg_icon.icns */; };
+		7CFBEC7514178F360086A59B /* CINumberField-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CD1EC881416217200173C0D /* CINumberField-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -131,6 +132,7 @@
 				7CD1EC781416217200173C0D /* Sources */,
 				7CD1EC791416217200173C0D /* Frameworks */,
 				7CD1EC7A1416217200173C0D /* Resources */,
+				7CFBEC7414178D5C0086A59B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -171,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CFBEC7514178F360086A59B /* CINumberField-Info.plist in Resources */,
 				7CD1EC8B1416217200173C0D /* InfoPlist.strings in Resources */,
 				7CD1EC911416217200173C0D /* Credits.rtf in Resources */,
 				7CD1EC971416217200173C0D /* MainMenu.xib in Resources */,
@@ -180,6 +183,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CFBEC7414178D5C0086A59B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n# Auto Increment Version Script\nbuildPlist=${SRCROOT}\"/CINumberField/CINumberField-Info.plist\"\nCFBuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBuildNumber\" $buildPlist)\nCFBuildNumber=$(($CFBuildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBuildNumber $CFBuildNumber\" $buildPlist\nCFBuildDate=$(date)\n/usr/libexec/PlistBuddy -c \"Set :CFBuildDate $CFBuildDate\" $buildPlist";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CD1EC781416217200173C0D /* Sources */ = {
@@ -244,7 +263,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -263,16 +282,18 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};
 		7CD1EC9B1416217200173C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CINumberField/CINumberField-Prefix.pch";
 				INFOPLIST_FILE = "CINumberField/CINumberField-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,9 +302,11 @@
 		7CD1EC9C1416217200173C0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CINumberField/CINumberField-Prefix.pch";
 				INFOPLIST_FILE = "CINumberField/CINumberField-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
