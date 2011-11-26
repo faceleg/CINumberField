@@ -37,7 +37,7 @@
         [self setStringValue:[NSString stringWithFormat:@"$%.02f", 
                              [[[self stringValue] stringByReplacingOccurrencesOfString:@"$" withString:@""] floatValue] ]];
     } 
-	[(NSTextField *)[self delegate] controlTextDidEndEditing:[NSNotification notificationWithName:@"controlTextDidEndEditing" 
+	[(NSObject *)[self delegate] controlTextDidEndEditing:[NSNotification notificationWithName:@"controlTextDidEndEditing" 
                                                                         object:self]];
 }
 
