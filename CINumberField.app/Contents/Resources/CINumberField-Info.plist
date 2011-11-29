@@ -2,8 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBuildDate</key>
+	<string>Tue Nov 29 22:35:13 NZDT 2011</string>
 	<key>CFBuildNumber</key>
-	<string>51</string>
+	<string>60</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDocumentTypes</key>
@@ -36,8 +38,6 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>CFBuildDate</key>
-	<string></string>
 	<key>NSServices</key>
 	<array/>
 	<key>UTExportedTypeDeclarations</key>
