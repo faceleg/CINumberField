@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C36B81214803C7C0014DFEE /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = SOURCE_ROOT; };
 		7C8B6F9614162C2800DFD6FE /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		7CD1EC7C1416217200173C0D /* CINumberField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CINumberField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD1EC801416217200173C0D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -103,6 +104,7 @@
 		7CD1EC871416217200173C0D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7C36B81214803C7C0014DFEE /* README.markdown */,
 				7CD1ECA614162A1D00173C0D /* faceleg_icon.icns */,
 				7CD1EC881416217200173C0D /* CINumberField-Info.plist */,
 				7CD1EC891416217200173C0D /* InfoPlist.strings */,
@@ -149,6 +151,7 @@
 		7CD1EC731416217200173C0D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0410;
 				ORGANIZATIONNAME = ECPod;
 			};
 			buildConfigurationList = 7CD1EC761416217200173C0D /* Build configuration list for PBXProject "CINumberField" */;
@@ -261,7 +264,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx10.6;
 			};
@@ -281,7 +284,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx10.6;
 			};
 			name = Release;
